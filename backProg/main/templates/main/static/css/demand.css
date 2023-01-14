@@ -1,0 +1,35 @@
+body, html {
+    text-shadow: 2px 0px 4px #000000;
+    background-color: #ffff99;
+}
+
+.photos {
+    transition: 0.2s;
+    padding: 3vh;
+    border-style: solid;
+    border-color: #d900ff;
+    border-radius: 1%;
+    opacity: 0.5;
+    box-shadow: 100px 50px 50px 1px rgba(0, 0, 0, 0.2);
+    background-color: #333333;
+}
+
+.photos:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 4vh;
+}
+
+a {
+    transition: 0.2s;
+    text-align: right;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+

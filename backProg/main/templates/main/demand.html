@@ -1,0 +1,29 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+{% block cssedit %}
+<link rel="stylesheet" href="{% static 'css/demand.css' %}">
+{% endblock %}
+
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="wow">
+    <h1 >Востребованность</h1>
+</div>
+<p>
+        {% for el in photos %}
+            {% if el.tableImg.url %}
+            <br>
+        <div class='photos'>
+            <img src="{{ el.tableImg.url }} " alt="" width="350" height="350">
+            <img src="{{ el.graphImg.url }} " alt="" width="500" height="350">
+    </div>
+            <br>
+        {% endif %}
+        {% endfor %}
+    </p>
+{% endblock %}
